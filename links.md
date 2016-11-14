@@ -12,3 +12,7 @@ A few useful tutorials that i have discovered !
 3. installed vim plug and many plugins
     
     need to learn to use nerd commenter and nerdtree
+
+4. Proxy authentication 
+
+    http://askubuntu.com/questions/88976/407-proxy-authentication-required
