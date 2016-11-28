@@ -10,10 +10,10 @@ sudo apt-get update
 
 #no trouble
 
-#3 install wget curl
+#3 install wget curl unrar
 sudo apt-get install wget -y
 sudo apt-get install curl -y
-
+sudo apt-get install unrar -y
 #no trouble 
 
 #4. install chrome : can not be installed in root mode
@@ -24,10 +24,14 @@ sudo apt-get install google-chrome-stable -y --allow-unauthenticated
 
 #wget command not reqd commented now
 
-#5. install atom
+#5. install atom and sublime
 sudo add-apt-repository ppa:webupd8team/atom -y 
 sudo apt-get update
 sudo apt-get install atom -y
+
+sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y
+sudo apt-get update
+sudo apt-get install sublime-text-installer
 
 #no hassles atom installed too
 
@@ -41,9 +45,9 @@ sudo apt-get install gem -y
 #success
 
 #8 jekyll 
-sudo apt-get install jekyll -y
-sudo gem update jekyll 
-sudo gem install bundler
+#sudo apt-get install jekyll -y
+#sudo gem update jekyll 
+#sudo gem install bundler
 #sudo gem update jekyll -y was a failure no such option 
 #corrected command
 
@@ -55,8 +59,8 @@ sudo apt-get install gcc-multilib g++-multilib -y
 sh git_config.sh
 
 #11 install zsh
-sudo apt-get install zsh -y
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#sudo apt-get install zsh -y
+#sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 #need to setup git first i guess
 
 #12 install monaco fonts 
@@ -74,26 +78,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\
 sudo apt-get update
 sudo apt-get install default-jre -y
 sudo apt-get install default-jdk -y
-sudo apt-get install netbeans -y
-#sudo add-apt-repository ppa:webupd8team/java 
-#sudo apt-get update
-#sudo apt-get install oracle-java8-installer -y
-# source : https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
-
 
 #15 install netbeans
-#wget download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh
-#wget http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-linux.sh
-#connection refused need to download manually 
-#update : updated the command failed again
-#downloaded file in same directory
-#chmod +x netbeans-8.2-javase-linux.sh
-#sudo sh netbeans-8.2-javase-linux.sh
-
-
-#15 install netbeans + jdk
-#chmod +x jdk-7u80-nb-8_0_2-linux-x64.sh
-#sudo sh jdk-7u80-nb-8_0_2-linux-x64.sh
+sudo apt-get install netbeans -y
 
 #16 clone my repos
 git clone https://github.com/BayMax12/dotfiles.git
@@ -116,3 +103,11 @@ sh install.sh
 cd
 #awesome colors
 
+#20 theme and icon pack
+sudo add-apt-repository ppa:noobslab/themes -y
+sudo apt-get update
+sudo apt-get install yosembiance-gtk-theme
+
+sudo apt-add-repository ppa:numix/ppa -y
+sudo apt-get update
+sudo apt-get install numix-icon-theme numix-icon-theme-circle
