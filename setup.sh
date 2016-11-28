@@ -43,6 +43,7 @@ sudo apt-get install gem -y
 #8 jekyll 
 sudo apt-get install jekyll -y
 sudo gem update jekyll 
+sudo gem install bundler
 #sudo gem update jekyll -y was a failure no such option 
 #corrected command
 
@@ -73,9 +74,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\
 sudo apt-get update
 sudo apt-get install default-jre -y
 sudo apt-get install default-jdk -y
-sudo add-apt-repository ppa:webupd8team/java 
-sudo apt-get update
-sudo apt-get install oracle-java8-installer -y
+sudo apt-get install netbeans -y
+#sudo add-apt-repository ppa:webupd8team/java 
+#sudo apt-get update
+#sudo apt-get install oracle-java8-installer -y
 # source : https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
 
 
@@ -90,10 +92,27 @@ sudo apt-get install oracle-java8-installer -y
 
 
 #15 install netbeans + jdk
-chmod +x jdk-7u80-nb-8_0_2-linux-x64.sh
-sudo sh jdk-7u80-nb-8_0_2-linux-x64.sh
+#chmod +x jdk-7u80-nb-8_0_2-linux-x64.sh
+#sudo sh jdk-7u80-nb-8_0_2-linux-x64.sh
 
 #16 clone my repos
 git clone https://github.com/BayMax12/dotfiles.git
 git clone https://github.com/BayMax12/shell.git
 git clone https://github.com/BayMax12/MyLibrary.git
+
+#17 install tmux : terminal multiplexer
+sudo apt-get install tmux -y
+#^_^ awesome
+
+#18 install unity tweak tool
+sudo apt-get install unity-tweak-tool -y
+sudo apt-get install gnome-tweak-tool -y
+
+#19 install dracula terminal colors
+sudo apt-get install dconf-cli -y
+git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula
+cd gnome-terminal-colors-dracula
+sh install.sh
+cd
+#awesome colors
+
